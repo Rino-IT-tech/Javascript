@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function employee()
+        {
+            var currentsalary = parseInt(prompt("Enter the current salary"));
+            var newsalary = parseInt(prompt("Enter the new salary")) ;
+
+            if(currentsalary < newsalary)
+            {
+                currentsalary = newsalary ;
+                document.write("Salary updated, new salary is : "+ currentsalary);
+            }
+            else
+            {
+                document.write("Now old salary is greather than new salary");
+            }
+
+        }
+        employee();
+    </script>
+</body>
+</html>

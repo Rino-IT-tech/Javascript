@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function loop()
+        {
+            var numofstudent = parseInt(prompt("Enter the NUmber of Student")) ;
+            for(var i = 1 ; i <= numofstudent ; i++)
+                {
+                    var mark1  = parseInt(prompt("Enter the mark one: "));
+                    var mark2  = parseInt(prompt("Enter the mark Two: "));
+                    var mark3  = parseInt(prompt("Enter the mark Three: "));
+
+                    if(mark1 > mark2 && mark1 > mark3)
+                    {
+                        document.write("Mark1 is Greather <br>") ;
+                    }
+                    else if(mark2 > mark1 && mark2 > mark3)
+                    {
+                        document.write("\nmaark2 is greather <br>");
+                    }
+                    else{
+                        document.write("\nmark3 is greather <br>");
+                    }
+
+                    total = mark1 + mark2 + mark3 ;
+                    avg = total / 3 ;
+
+                    document.write("\nAverage of stustent"+ i + "is" + avg + "<br><br>");
+                }
+            
+        }
+
+
+        loop() ;
+    </script>
+</body>
+</html>
