@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function array()
+       {
+        var fruits = [] ;
+        let size = parseInt(prompt("Enter the Size of the Array"));
+        for(let i = 0 ; i < size ; i++)
+        {
+            fruits[i] = prompt("Enter the array values "+ i );
+        }
+        document.writeln(fruits + "<br>");
+        let size1 = parseInt(prompt("Enter how many element to replace"))
+        for(i = 0 ; i < size1;i++)
+        {
+            let replace = prompt("Enter which element is replace ");
+            let replacevalue = prompt("Enter the Replace value");
+            fruits[replace] = replacevalue ;
+
+        }
+        document.writeln(fruits);
+        
+       }
+       array();
+
+
+    </script>
+</body>
+</html>

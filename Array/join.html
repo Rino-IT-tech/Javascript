@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function array()
+        {
+            let size= parseInt(prompt("Enter the size of the array"));
+            let numbers = [];
+            for(let i = 0 ; i < size ; i++)
+            {
+                numbers[i] = parseInt(prompt("Enter the array element " + i));
+            }
+            let index = prompt("Enter the seprate element ");
+            
+
+            document.write(numbers.join(index));
+        }
+        array();
+    </script>
+</body>
+</html>

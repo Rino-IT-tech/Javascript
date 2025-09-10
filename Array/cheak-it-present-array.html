@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function array()
+        {
+            let size= parseInt(prompt("Enter the size of the array"));
+            let animal = [];
+            for(let i = 0 ; i < size ; i++)
+            {
+                animal[i] = prompt("Enter the array element " + i);
+            }
+            let cheak = prompt("Enter the cheak element ");
+            let value = animal.includes(cheak);
+
+            if(value === true){
+                document.write("True present")
+            }
+            else{
+                document.write("No not present")
+            }
+        }
+        array();
+    </script>
+</body>
+</html>

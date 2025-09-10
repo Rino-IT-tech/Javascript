@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-size: 24px;">
+    <script>
+        function array()
+        {
+            let size= parseInt(prompt("Enter the size of the array"));
+            let numbers = [];
+            for(let i = 0 ; i < size ; i++)
+            {
+                numbers[i] = parseInt(prompt("Enter the array element " + i));
+            }
+            let index = parseInt(prompt("Enter the element to find a Index "));
+            let value = numbers.indexOf(index);
+
+            document.write("Index of " + index + " is "+value);
+        }
+        array();
+    </script>
+   
+</body>
+</html>
