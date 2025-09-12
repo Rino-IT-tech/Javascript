@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        function filter()
+        {
+            let size = parseInt(prompt("Enter the size of the array."));
+            let number = [];
+
+            for(let i = 0 ; i < size ; i++)
+            {
+                number[i] = parseInt(prompt("Enter the number" + (i + 1)) );
+            }
+            document.writeln(number + "<br>");
+
+            let mul = number.find(a => a > 25);
+
+            document.writeln( "First greather number is "+mul);
+        }
+        filter();
+    </script>
+</body>
+</html>
