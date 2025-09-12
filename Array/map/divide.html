@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function map()
+        {
+            let size = parseInt(prompt("Enter the size of the array."));
+            let number = [];
+
+            for(let i = 0 ; i <= size ; i++)
+            {
+                number[i] = parseInt(prompt("Enter the array element"));
+            }
+            let num = parseInt(prompt("Enter the divide number"));
+
+            let divide = number.map(num => num / num );
+
+            document.writeln(divide);
+
+        }
+        map();
+    </script>
+</body>
+</html>

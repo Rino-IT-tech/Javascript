@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <script>
+        function map()
+        {
+            let size = parseInt(prompt("Enter the size of the array."));
+            let words = [];
+
+            for(let i = 0 ; i <= size ; i++)
+            {
+                words[i] = prompt("Enter the names " + (i + 1)) ;
+            }
+
+            let length = words.map(num => num.length );
+
+            document.writeln(length);
+
+        }
+        map();
+    </script>
+</body>
+</html>
