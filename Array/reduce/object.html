@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function maps()
+        {
+            let employees = [
+                {name:"rino" , price: 100 },
+                {name:"kishore" , price: 2000 },
+                {name: "muthu" , price: 30000 }
+            ];
+
+            let object = employees.reduce((sum,take) => sum + take.price,0);
+            document.writeln( "Total : "+object);
+        }
+        maps();
+
+
+
+
+    </script>
+</body>
+</html>
